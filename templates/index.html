@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      main {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+      }
+
+      .teams, .players {
+        width: 45%;
+      }
+
+      button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #555;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+
+    </style>
+    <title>Random players</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mark kusu portofolio</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      
+      <header>
+        <h1>Mark kusu</h1>
+        <p>My API generated portofolio website</p>
+      </header>
+      <main>
+        <div class="teams">
+          <h2>About</h2>
+          <ul id="team-list"></ul>
+          <button onclick="getRandomTeams()">See about</button>
+          <p>
+            {{result}}
+          </p>
+        </div>
+        <div class="players">
+          <h2>Repositories</h2>
+          <ul id="player-list"></ul>
+          <button onclick="getRandomPlayers()">Open repositories</button>
+          <p>
+            {{result2}}
+             {{result3}}
+          </p>
+        </div>
+        <h2>
+          
+        </h2>
+      </main>
+      <script src="script.js"></script>
+    </body>
+    </html>
+ 
+  </body>
+</html>
